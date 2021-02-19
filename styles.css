@@ -333,6 +333,7 @@ color: var(--black);
 }
 .plans--container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300;
@@ -399,4 +400,11 @@ color: var(--black);
     vertical-align: text-bottom;
     background-image:  url(./assets/icons/orange-right-arrow.svg);
     
+}
+.plans--container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
